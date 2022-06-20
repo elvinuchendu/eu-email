@@ -28,6 +28,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    <style>
+      /* desktop */
+      @media only screen and (min-width: 960px){
+        .container{
+          width: 960px;
+        }
+        .header-left{
+          padding: 36px 15px 70px 15px !important;
+        }
+      }
+      /* midsizes */
+      @media only screen and (max-width: 960px) {
+        .container{
+          width: 600px;
+        }
+      }
+      /* mobile */
+      @media only screen and (max-width: 600px){
+        .container{
+          width: 100%;
+        }
+        .header-left{
+          width: 100%;
+        }
+        .header-right{
+          width: 100%;
+        }
+        /* img{
+          width:100%;
+        } */
+      }
+    </style>
   </head>
   <body style="background: black;">
     <!-- start of html email -->
@@ -35,7 +67,7 @@
       <tr>
         <td>
               <!-- start of container -->
-          <table width="600" align="center" cellspacing="0" cellpadding="0">
+          <table class="container" width="600" align="center" cellspacing="0" cellpadding="0">
             <!-- start of header row -->
             <tr>
               <td>
@@ -63,7 +95,7 @@
                 <table class="header-right" width="50%" align="right" cellspacing="0" cellpadding="0" style="background: white;">
                   <tr>
                     <td style="font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; color: #7d7d7d";>
-                      <table class="container" width="100%" align="center" cellspacing="0" cellpadding="0" style="padding: 20px;">
+                      <table class="menu-table" width="100%" align="center" cellspacing="0" cellpadding="0" style="padding: 20px;">
                         <tr>
                             <td align="center">
                               <a href="#" style="font-size: 14px; font-weight: 600; text-decoration: none; color: #7d7d7d">About</a>
